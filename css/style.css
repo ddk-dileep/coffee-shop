@@ -1,0 +1,349 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html ,
+body{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+a.link-a{
+    display: block;
+    background-color:rgb(255, 255, 255);
+    padding: 7px 15px;
+    border-radius:2px 7px;
+    border: 2px solid rgb(145, 142, 142);
+    color: black;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+a.link-a:hover{
+    border-radius: 7px 2px;
+    border-color: rgb(44, 199, 39);
+    color: tomato;
+    box-shadow: 1px 1px 12px 2px rgba(94, 94, 94, 0.192);
+}
+body{
+    background-color: rgba(240, 248, 237, 0.473);
+}
+nav{
+    background-color: #fff !important;
+    border: 1px solid rgba(214, 211, 211, 0.267);
+    box-shadow: 1px 1px 12px 2px rgba(94, 94, 94, 0.192);
+}
+nav ul li a{
+    color: rgb(117, 47, 0) !important;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    color: rgb(44, 199, 39);
+    background-color: rgba(253, 242, 242, 0.582);
+}
+nav .navbar-brand{
+    color: rgb(44, 199, 39) !important;
+    font-size: 2rem;
+}
+.navbar-toggler{
+    border: 2px solid rgb(143, 96, 190);
+    padding: 0%;    
+}
+.navbar-toggler-icon{
+    color: rgb(44, 199, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.video{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+section.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+section.video::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 143, 0, 0.212);
+}
+section.video .video-text{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    margin-top: 200px;
+}
+section .video-text .inner{
+    background-color: rgba(255, 255, 255, 0.493);
+    width: 80%;
+    padding: 25px;
+    border-radius: 30px 0px;
+}
+@media (max-width:550px) {
+    section .video-text .inner{
+        width: 90%;
+        padding: 20px;
+    }
+}
+section .video-text .inner h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: green;
+    font-size: 3rem;
+    transition: all 0.5s ease-in-out;
+}
+section .video-text .inner:hover h3{
+    color: tomato;
+}
+section .video-text .inner small{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+section .video-text .inner p{
+    font-size: 2.5rem;
+    color: green;
+    font-weight: bolder;
+    transition: all 0.5s ease-in-out;
+}
+section .video-text .inner:hover p{
+    color: indigo;
+}
+a.other-a{
+    display: inline-block;
+    margin-top: 1rem;
+}
+a.other-a:hover{
+    letter-spacing: 1.3px;
+}
+@media (max-width:1200px) {
+    section.video .video-text{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width:900px) {
+    section.video .video-text{
+        margin-top: 150px;
+    }
+    section .video-text .inner h3{
+        font-size: 2rem;
+    }
+    section .video-text .inner p{
+        font-size: 1.8rem;
+    }
+    section .video-text .inner small{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:650px) {
+    section.video .video-text{
+        margin-top: 120px;
+    }
+    section .video-text .inner h3{
+        font-size: 1.8rem;
+    }
+}
+
+section.about img{
+    width: 100%;
+    height: 450px;
+    object-position: center;
+    object-fit: cover;
+}
+section.about{
+    padding: 50px 0;
+}
+
+section.about .image-section{
+    overflow: hidden;
+    border-radius: 60% 35%;
+}
+.inner-right-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 25px;
+}
+section.about .ididid{
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   margin-top: 30px;
+}
+section.about .ididid .box{
+    border: 2px dashed green;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 30% 50%;
+}
+section.about .ididid .box h4{
+    color: rgb(172, 28, 3);
+}
+.inner-right-about h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.inner-right-about p{
+    text-align: justify;
+    color: grey;
+}
+.inner-right-about a.other-a{
+    width: 128px;
+}
+.inner-right-about a.other-a:hover{
+    width: 140px;
+}
+section.menu{
+    background-image: url(../images/menubg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+section.menu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+section.menu .row{
+    display: flex;
+    justify-content: space-around;
+}
+section.menu .menu-section-our{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px dashed rgba(0, 54, 134, 0.521);
+    border-radius:4% 25%;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.459);
+}
+section.menu .menu-section-our .img-sec{
+    width: 300px;
+}
+section.menu .menu-section-our .inner{
+    padding: 25px 0 0 25px;
+}
+section.reviews{
+    padding: 50px 0;
+    text-align: center;
+}
+section.reviews img{
+    margin: 15px 0;
+    width: 120px;
+    height: 120px;
+    object-position: center;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(113, 116, 108, 0.822);
+    box-shadow: 2px 2px 10px 7px rgba(83, 83, 83, 0.226);
+}
+section.reviews .carousel-item{
+    padding: 100px 0;
+    border: 2px dashed red;
+    border-radius: 60% 20%;
+}
+section.reviews .i2,
+section.reviews .i4,
+section.reviews .i6{
+    border-radius: 20% 60%;
+}
+section.reviews .carousel-item p{
+    width: 60%;
+    text-align: center;
+    margin: 0% auto;
+}
+.text-info-btn{
+    color: green;
+}
+footer{
+    padding: 50px 0;
+    background-color: rgb(83, 83, 83);
+}
+footer .links-footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.links-footer,
+footer .contact,
+footer .social {
+    width: 60%;
+    margin: 0 auto;
+}
+@media (max-width:900px) {
+    .links-footer,
+footer .contact,
+footer .social {
+    width: 70%;
+    margin: 0 auto;
+}
+}
+@media (max-width:600px) {
+    .links-footer,
+footer .contact,
+footer .social {
+    width: 90%;
+    margin: 0 auto;
+}
+}
+footer .links-footer a{
+    color: rgb(247, 219, 178);
+    line-height: 30px;
+    transition: all 0.5s ease-in-out;
+}
+footer .links-footer a:hover{
+    letter-spacing: 1.3px;
+    color: white;
+}
+footer .footer-icon,
+footer i
+{
+    margin-right: 20px;
+    font-size: 1.1rem;
+    color: white !important;
+    
+}
+footer .social .inner{
+    line-height: 30px;
+}
+footer .social .inner a{
+    transition: all 0.5s ease-in-out;
+    color: wheat;
+    text-decoration: none;
+}
+footer .social .inner a:hover{
+    letter-spacing: 1.3px;
+    color: white;
+}

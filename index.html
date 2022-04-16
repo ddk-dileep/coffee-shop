@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- manual css -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Coffee ! For Youth </title>
+</head>
+
+<body>
+  <div id="HOME"></div>
+  <nav class="navbar fixed-top navbar-expand-lg ">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold" href="index.html">COFFEE <i class="fas fa-mug-hot"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#HOME">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ABOUT">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#MENU">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#REVIEW">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#CONTACT">Contacts</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <a class="link-a" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Fill Details and Order Now</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <form action="">
+        <div class="form-floating mb-3">
+          <input required type="text" class="form-control" id="floatingInput1" placeholder="name@example.com">
+          <label for="floatingInput1">Full Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input required type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input required type="tel" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Mobile Number</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input required placeholder="1" type="number" class="form-control" id="floatingPassword1" >
+          <label for="floatingPassword1">Quantity</label>
+        </div>
+        <div class="form-floating">
+          <select required class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Open this select from menu</option>
+            <option value="French Vanilla">French Vanilla</option>
+            <option value="Caramel Macchiato">Caramel Macchiato</option>
+            <option value="Pumpkin Spice">Pumpkin Spice</option>
+            <option value="Mocha">Mocha</option>
+            <option value="Hazelnut">Hazelnut</option>
+            <option value="Kona">Kona</option>
+            <option value="Butterscotch">Butterscotch</option>
+            <option value="Amaretto">Amaretto</option>
+            <option value="Flat White">Flat White</option>
+            <option value="Long black">Long black</option>
+          </select>
+          <label for="floatingSelect">Coffee Type</label>
+        </div>
+      </div>
+        <input type="submit" class="btn btn-primary m-2" value="Order">
+    </form>
+    </div>
+  </div>
+</div>
+
+  <section id="home" class="video">
+    <video src="videos/bg.mp4" muted loop autoplay></video>
+    <div class="video-text">
+      <div class="inner text-center">
+        <h3>fresh coffee any time </h3>
+        <small> &</small>
+        <p>Morning Special</p>
+        <a class="link-a other-a" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Table Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="ABOUT" class="about">
+    <div class="inner-about container">
+      <div class="heading my-3 py-4 text-center">
+        <h3 class="text-uppercase fw-bold">About US</h3>
+        <p class="text-lowercase">Why choose us ?</p>
+      </div>
+      <div class="row gx-0">
+        <div class="col-md-5 col-lg-5 col-12">
+          <div class="image-section">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/slide1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide6.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-7 col-12">
+          <div class="inner-right-about">
+            <h3>What Make Our Coffee Special!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quia molestias. Fugit consequuntur, enim
+              in veritatis tempora dolores magnam fuga esse rerum nesciunt praesentium nulla sed ut, dolorem
+              exercitationem laboriosam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quia molestias. Fugit consequuntur, enim
+              in veritatis tempora dolores magnam fuga esse rerum nesciunt praesentium nulla sed ut, dolorem
+              exercitationem laboriosam.</p>
+            <a class="link-a other-a" href="">Read More</a>
+            <div class="ididid">
+              <div class="box">
+                <i class="fab fa-pagelines"></i>
+                <h4>Quality Coffee</h4>
+              </div>
+              <div class="box">
+                <i class="fas fa-code-branch"></i>
+                <h4>Our Branches</h4>
+              </div>
+              <div class="box">
+                <i class="fas fa-truck"></i>
+                <h4>Free Delivery</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="MENU" class="menu">
+    <div class="container">
+      <div class="heading my-3 py-4 text-center">
+        <h3 class="text-uppercase fw-bold">Our Menu</h3>
+        <p class="text-lowercase">Best coffee brands ?</p>
+      </div>
+      <div class="inner-box-menu">
+        <div class="row  g-3">
+          <div class="col-md-5 menu-section-our col-lg-5 col-12">
+            <div class="img-sec">
+              <img src="images/coffe1.png" alt="">
+            </div>
+            <div class="inner">
+              <h3>Our Special Coffee</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt praesentium impedit repudiandae,
+                veritatis tempore recusandae vel fugiat ex aliquid repellendus harum temporibus.</p>
+              <p class="price">$8.75</p>
+            </div>
+          </div>
+          <div class="col-md-5 menu-section-our col-lg-5 col-12">
+            <div class="img-sec">
+              <img src="images/coffee2.png" alt="">
+            </div>
+            <div class="inner">
+              <h3>Our Special Coffee</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt praesentium impedit repudiandae,
+                veritatis tempore recusandae vel fugiat ex aliquid repellendus harum temporibus.</p>
+              <p class="price">$8.75</p>
+            </div>
+          </div>
+          <div class="col-md-5 menu-section-our col-lg-5 col-12">
+            <div class="img-sec">
+              <img src="images/coffee3.png" alt="">
+            </div>
+            <div class="inner">
+              <h3>Our Special Coffee</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt praesentium impedit repudiandae,
+                veritatis tempore recusandae vel fugiat ex aliquid repellendus harum temporibus.</p>
+              <p class="price">$8.75</p>
+            </div>
+          </div>
+          <div class="col-md-5 menu-section-our col-lg-5 col-12">
+            <div class="img-sec">
+              <img src="images/coffee4.png" alt="">
+            </div>
+            <div class="inner">
+              <h3>Our Special Coffee</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt praesentium impedit repudiandae,
+                veritatis tempore recusandae vel fugiat ex aliquid repellendus harum temporibus.</p>
+              <p class="price">$8.75</p>
+            </div>
+          </div>
+          <div class="col-md-5 menu-section-our col-lg-5 col-12">
+            <div class="img-sec">
+              <img src="images/coffee5.png" alt="">
+            </div>
+            <div class="inner">
+              <h3>Our Special Coffee</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt praesentium impedit repudiandae,
+                veritatis tempore recusandae vel fugiat ex aliquid repellendus harum temporibus.</p>
+              <p class="price">$8.75</p>
+            </div>
+          </div>
+          <div class="col-md-5 menu-section-our col-lg-5 col-12">
+            <div class="img-sec">
+              <img src="images/coffee6.png" alt="">
+            </div>
+            <div class="inner">
+              <h3>Our Special Coffee</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt praesentium impedit repudiandae,
+                veritatis tempore recusandae vel fugiat ex aliquid repellendus harum temporibus.</p>
+              <p class="price">$8.75</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="REVIEW" class="reviews">
+    <div class="container">
+      <div class="heading my-3 py-4 text-center">
+        <h3 class="text-uppercase fw-bold">Reviews for our brand</h3>
+        <p class="text-lowercase">Is it real? <br> let's have a look.</p>
+      </div>
+
+      <div class="review-box">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active i1">
+              <div class="review-inner">
+                <div class="box">
+                  <img src="images/review1.jpg" alt="">
+                  <h3>Milee Deo</h3>
+                  <small>Happy Client</small>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae error quibusdam,
+                    commodi soluta incidunt architecto dignissimos quas quidem quaerat laudantium aliqu</p>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item i2">
+              <div class="review-inner">
+                <div class="box">
+                  <img src="images/review2.jpeg" alt="">
+                  <h3>YAmii Devi</h3>
+                  <small>Happy Client</small>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae error quibusdam,
+                    commodi soluta incidunt architecto dignissimos quas quidem quaerat laudantium aliqu</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item i3">
+              <div class="review-inner">
+                <div class="box">
+                  <img src="images/review3.jpg" alt="">
+                  <h3>Rasmika M.</h3>
+                  <small>Happy Client</small>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae error quibusdam,
+                    commodi soluta incidunt architecto dignissimos quas quidem quaerat laudantium aliqu</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item i4">
+              <div class="review-inner">
+                <div class="box">
+                  <img src="images/review4.jpeg" alt="">
+                  <h3>Radhika Ram.</h3>
+                  <small>Happy Client</small>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae error quibusdam,
+                    commodi soluta incidunt architecto dignissimos quas quidem quaerat laudantium aliqu</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item i5">
+              <div class="review-inner">
+                <div class="box">
+                  <img src="images/review5.jpg" alt="">
+                  <h3>Disha M.</h3>
+                  <small>Happy Client</small>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae error quibusdam,
+                    commodi soluta incidunt architecto dignissimos quas quidem quaerat laudantium aliqu</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item i6">
+              <div class="review-inner">
+                <div class="box">
+                  <img src="images/review6.jpg" alt="">
+                  <h3>Gyani M.</h3>
+                  <small>Happy Client</small>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae error quibusdam,
+                    commodi soluta incidunt architecto dignissimos quas quidem quaerat laudantium aliqu</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="text-info-btn carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="text-info carousel-control-prev-icon bg-danger shadow-sm border p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="text-info-btn carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="text-info carousel-control-next-icon bg-danger shadow-sm border p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <section class=""></section> -->
+  <footer id="CONTACT">
+    <div class="container text-light">
+      <div class="inner">
+        <div class="row footer-row">
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="links-footer">
+              <h3 class="text-uppercase my-3" style="color: rgb(9, 161, 9);">Imp links</h3>
+              <a href="#HOME" class="home">-> Home</a>
+              <a href="#About" class="home">-> About</a>
+              <a href="#About" class="home">-> Menus</a>
+              <a href="#About" class="home">-> Reviews</a>
+              <a href="" class="home">-> Order Now</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="contact">
+              <h3 class="text-uppercase my-3" style="color: rgb(9, 161, 9);">Contact Info</h3>
+              <div class="inner mt-3">
+                <i class="fab text-success footer-icon  fa-twitter-square"></i>
+                +91 9955882525
+              </div>
+              <div class="inner mt-3">
+                <i class="fas text-success footer-icon  fa-mobile"></i>
+                +91 7845751585
+              </div>
+              <div class="inner mt-3">
+                <i class="fas text-success footer-icon  fa-envelope-square"></i>
+                coffee.help@contact.com
+              </div>
+              <div class="inner mt-3">
+                <i class="fas text-success footer-icon  fa-map-marker"></i>
+                MIDC Pune , MH
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="social">
+              <h3 class="text-uppercase my-3" style="color: rgb(9, 161, 9);">Social links</h3>
+              <div class="inner">
+                <i class="fab fa-facebook"></i>
+                <a href="">Facebook</a>
+              </div>
+              <div class="inner">
+                <i class="fab fa-instagram-square"></i>
+                <a href="">Instagram</a>
+              </div>
+              <div class="inner">
+                <i class="fab fa-linkedin"></i>
+                <a href="">Linkedin</a>
+              </div>
+              <div class="inner">
+                <i class="fab fa-youtube-square"></i>
+                <a href="">Youtube</a>
+              </div>
+              <div class="inner">
+                <i class="fab fa-twitter-square"></i>
+                <a href="">Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom text-center text-light pt-4">
+        <p>All &copy; Rights Reserved | Coffee for youths </p>
+        <small>Made with love by Dileep Raloti</small>
+      </div>
+    </div>
+  </footer>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- manual js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
